@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Panificadora & Confeitaria Magnólia</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+        radial-gradient(circle at top,#5d755d 0%,#3b4e3f 35%,#2b362d 100%);
+
+    color:#F6F2EA;
+
+    font-family:Inter,sans-serif;
+
+    overflow:hidden;
+}
+
+body::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at center,
+        rgba(255,255,255,.05) 0%,
+        transparent 65%);
+    pointer-events:none;
+}
+
+.container{
+    text-align:center;
+    z-index:1;
+}
+
+.logo{
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(1.8rem,3vw,2.8rem);
+    letter-spacing:8px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+    color:#E8DDC8;
+}
+
+.line{
+    width:90px;
+    height:1px;
+    background:#C8B28A;
+    margin:0 auto 35px;
+    opacity:.8;
+}
+
+.soon{
+    font-family:"Cormorant Garamond",serif;
+    font-size:clamp(3rem,7vw,6rem);
+    font-weight:500;
+    letter-spacing:4px;
+}
+
+.subtitle{
+    margin-top:22px;
+    font-size:.95rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#D7CBB5;
+    opacity:.8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="logo">
+        Magnólia
+    </div>
+
+    <div class="line"></div>
+
+    <div class="soon">
+        Em breve
+    </div>
+
+    <div class="subtitle">
+        Panificadora & Confeitaria
+    </div>
+
+</div>
+
+</body>
+</html>
